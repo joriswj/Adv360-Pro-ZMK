@@ -1,6 +1,6 @@
 macro_hyper: macro_hyper{
 compatible = "zmk,behavior-macro";
-label = "macro_quotes";
+label = "macro_hyper";
 #binding-cells = <0>;
 bindings = <&kp LC(LG(LS(LALT)))>;
 };
