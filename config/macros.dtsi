@@ -2,7 +2,7 @@ macro_vim_save_all: macro_vim_save_all{
 compatible = "zmk,behavior-macro";
 label = "macro_vim_save_all";
 #binding-cells = <0>;
-bindings = <&kp ESC>, <&kp COLON>, <&kp W>, <&kp A>;
+bindings = <&kp ESC>, <&kp COLON>, <&kp W>, <&kp A>, <&kp ENTER>;
 };
 macro_hyper: macro_hyper{
 compatible = "zmk,behavior-macro";
