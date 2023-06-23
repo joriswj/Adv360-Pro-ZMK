@@ -6,7 +6,7 @@ bindings = <&kp ESC>, <&kp COLON>, <&kp W>, <&kp A>, <&kp ENTER>;
 };
 macro_vim_quit_all: macro_vim_quit_all{
 compatible = "zmk,behavior-macro";
-label = "macro_vim_save_all";
+label = "macro_vim_quit_all";
 #binding-cells = <0>;
 bindings = <&kp ESC>, <&kp COLON>, <&kp Q>, <&kp A>, <&kp ENTER>;
 };
