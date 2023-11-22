@@ -44,11 +44,11 @@
 
         default_layer {
             bindings = <
- &kp EQUAL  &kp N1        &kp N2      &kp N3       &kp N4       &kp N5         &tog 1                                                               &mo 3                   &kp N6  &kp N7       &kp N8       &kp N9      &kp N0           &kp MINUS
- &kp TAB    &kp Q         &kp W       &kp E        &kp R        &kp T          &macro_quotes                                                        &macro_vim_quit_all     &kp Y   &kp U        &kp I        &kp O       &kp P            &kp BSLH
- &kp ESC    &hm LGUI A    &hm LALT S  &hm LCTRL D  &hm LSHFT F  &kp G          &kp MACLOCK    &kp TAB     &kp LGUI            &kp RALT   &kp RGUI   &macro_vim_save_all     &kp H   &hm RSHFT J  &hm RCTRL K  &hm RALT L  &hm RGUI SEMI    &kp SQT
- &kp LSHFT  &hm CMDSFT Z  &kp X       &kp C        &hm HYPER V  &kp B                                     &kp ESC             &kp TAB                                       &kp N   &hm HYPER M  &kp COMMA    &kp DOT     &hm CMDSFT FSLH  &kp RSHFT
- &mo 2      &kp GRAVE     &kp CAPS    &kp LEFT     &kp RIGHT                   &kp LCTRL      &kp BSPC    &kp HYPER           &kp HYPER  &kp ENTER  &kp SPACE                       &kp DOWN     &kp UP       &kp LBKT    &kp RBKT         &mo 2
+ &kp EQUAL  &kp N1         &kp N2      &kp N3       &kp N4       &kp N5         &tog 1                                                               &mo 3                   &kp N6  &kp N7       &kp N8       &kp N9      &kp N0            &kp MINUS
+ &kp TAB    &kp Q          &kp W       &kp E        &kp R        &kp T          &macro_quotes                                                        &macro_vim_quit_all     &kp Y   &kp U        &kp I        &kp O       &kp P             &kp BSLH
+ &kp ESC    &hm LGUI A     &hm LALT S  &hm LCTRL D  &hm LSHFT F  &kp G          &kp MACLOCK    &kp TAB     &kp LGUI            &kp RALT   &kp RGUI   &macro_vim_save_all     &kp H   &hm RSHFT J  &hm RCTRL K  &hm RALT L  &hm RGUI SEMI     &kp SQT
+ &kp LSHFT  &hm CMDSHFT Z  &kp X       &kp C        &hm HYPER V  &kp B                                     &kp ESC             &kp TAB                                       &kp N   &hm HYPER M  &kp COMMA    &kp DOT     &hm CMDSHFT FSLH  &kp RSHFT
+ &mo 2      &kp GRAVE      &kp CAPS    &kp LEFT     &kp RIGHT                   &kp LCTRL      &kp BSPC    &kp HYPER           &kp HYPER  &kp ENTER  &kp SPACE                       &kp DOWN     &kp UP       &kp LBKT    &kp RBKT          &mo 2
             >;
         };
 
