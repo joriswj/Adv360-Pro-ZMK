@@ -88,6 +88,15 @@ source: https://github.com/urob/zmk-nodefree-config/blob/8506dbaaee9b46d200aa553
         bindings = <&kp>, <&kp>;
 	hold-trigger-key-positions = <KEYS_LEFT THUMBS_LEFT>;
     };
+    hm_c: homerow_mod_ctrl {
+        compatible = "zmk,behavior-hold-tap";
+        label = "homerow_mod_ctrl";
+        #binding-cells = <2>;
+        flavor = "hold-preferred";
+        tapping-term-ms = <200>;
+        quick-tap-ms = <200>;
+        bindings = <&kp>, <&kp>;
+    };
   };
 
     // Home row mods
@@ -103,7 +112,7 @@ source: https://github.com/urob/zmk-nodefree-config/blob/8506dbaaee9b46d200aa553
     #define _CMD_SHFT_FSLH  &hm_r CMD_SHFT FSLH
 
     // Thumb key mods
-    #define _ESC_CTRL &hm_l LCTRL ESC
+    #define _ESC_CTRL &hm_c LCTRL ESC
     //#define _SPACE_CTRL &hm_r RCTRL SPACE
 
 
