@@ -92,7 +92,7 @@ source: https://github.com/urob/zmk-nodefree-config/blob/8506dbaaee9b46d200aa553
         compatible = "zmk,behavior-hold-tap";
         label = "homerow_mod_ctrl";
         #binding-cells = <2>;
-        flavor = "hold-preferred";
+        flavor = "balanced";
         tapping-term-ms = <200>;
         quick-tap-ms = <200>;
         bindings = <&kp>, <&kp>;
