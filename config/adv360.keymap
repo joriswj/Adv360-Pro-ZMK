@@ -58,7 +58,7 @@
         compatible = "zmk,behavior-hold-tap";
         label = "homerow_mods_left";
         #binding-cells = <2>;
-        flavor = "tap-preferred";
+        flavor = "balanced";
         tapping-term-ms = <200>;
         quick-tap-ms = <200>;
         bindings = <&kp>, <&kp>;
@@ -68,7 +68,7 @@
         compatible = "zmk,behavior-hold-tap";
         label = "homerow_mods_right";
         #binding-cells = <2>;
-        flavor = "tap-preferred";
+        flavor = "balanced";
         tapping-term-ms = <200>;
         quick-tap-ms = <200>;
         bindings = <&kp>, <&kp>;
@@ -88,6 +88,11 @@
     #define _SEMI_SHFT &hm_r RGUI SEMI
     #define _CMD_SHFT_FSLH  &hm_r CMD_SHFT FSLH
 
+    // Thumb key mods
+    #define _ESC_CTRL &hm_l LCTRL ESC
+    #define _SPACE_CTRL &hm_r RCTRL SPACE
+
+
 
     keymap {
         compatible = "zmk,keymap";
@@ -99,7 +104,7 @@
  &kp TAB    &kp Q          &kp W       &kp E        &kp R        &kp T          &macro_quotes                                                        &macro_vim_quit_all     &kp Y   &kp U        &kp I           &kp O       &kp P             &kp BSLH
  &kp ESC    _A_CMD         _S_OPT      _D_CTRL      _F_SHFT      &kp G          &kp MACLOCK    &kp TAB     &kp LGUI            &kp RALT   &kp RGUI   &macro_vim_save_all     &kp H   _J_SHFT      _K_CTRL         _L_OPT      _SEMI_SHFT        &kp SQT
  &kp LSHFT  _CMD_SHFT_Z    &kp X       &lt 2 C      &hm HYPER V  &kp B                                     &kp LCTRL           &kp TAB                                       &kp N   &hm HYPER M  &lt 2 COMMA     &kp DOT     _CMD_SHFT_FSLH    &kp RSHFT
- &mo 2      &kp GRAVE      &kp CAPS    &kp LEFT     &kp RIGHT                   &kp ESC        &kp BSPC    &kp HYPER           &kp HYPER  &kp ENTER  &kp SPACE                       &kp DOWN     &kp UP          &kp LBKT    &kp RBKT          &mo 2
+ &mo 2      &kp GRAVE      &kp CAPS    &kp LEFT     &kp RIGHT                   _ESC_CTRL      &kp BSPC    &kp HYPER           &kp HYPER  &kp ENTER  _SPACE_CTRL                     &kp DOWN     &kp UP          &kp LBKT    &kp RBKT          &mo 2
             >;
         };
 
