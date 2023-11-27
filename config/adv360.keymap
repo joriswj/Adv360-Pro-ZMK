@@ -102,8 +102,8 @@
             bindings = <
  &kp EQUAL  &kp N1         &kp N2      &kp N3       &kp N4       &kp N5         &tog 1                                                               &mo 3                   &kp N6  &kp N7       &kp N8          &kp N9      &kp N0            &kp MINUS
  &kp TAB    &kp Q          &kp W       &kp E        &kp R        &kp T          &macro_quotes                                                        &macro_vim_quit_all     &kp Y   &kp U        &kp I           &kp O       &kp P             &kp BSLH
- &kp ESC    _A_CMD         _S_OPT      _D_CTRL      _F_SHFT      &kp G          &kp MACLOCK    &kp TAB     &kp LGUI            &kp RALT   &kp RGUI   &macro_vim_save_all     &kp H   _J_SHFT      _K_CTRL         _L_OPT      _SEMI_SHFT        &kp SQT
- &kp LSHFT  _CMD_SHFT_Z    &kp X       &lt 2 C      &hm HYPER V  &kp B                                     &kp LCTRL           &kp TAB                                       &kp N   &hm HYPER M  &lt 2 COMMA     &kp DOT     _CMD_SHFT_FSLH    &kp RSHFT
+ &kp ESC    _A_CMD         _S_OPT      _D_CTRL      _F_SHFT      &kp G          &kp MACLOCK    &kp LGUI    &kp LCTRL           &kp RALT   &kp RGUI   &macro_vim_save_all     &kp H   _J_SHFT      _K_CTRL         _L_OPT      _SEMI_SHFT        &kp SQT
+ &kp LSHFT  _CMD_SHFT_Z    &kp X       &lt 2 C      &hm HYPER V  &kp B                                     &kp TAB             &kp TAB                                       &kp N   &hm HYPER M  &lt 2 COMMA     &kp DOT     _CMD_SHFT_FSLH    &kp RSHFT
  &mo 2      &kp GRAVE      &kp CAPS    &kp LEFT     &kp RIGHT                   _ESC_CTRL      &kp BSPC    &kp HYPER           &kp HYPER  &kp ENTER  _SPACE_CTRL                     &kp DOWN     &kp UP          &kp LBKT    &kp RBKT          &mo 2
             >;
         };
