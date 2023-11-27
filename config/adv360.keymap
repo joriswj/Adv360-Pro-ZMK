@@ -62,7 +62,7 @@
         tapping-term-ms = <200>;
         quick-tap-ms = <200>;
         bindings = <&kp>, <&kp>;
-	hold-trigger-key-positions = <KEYS_RIGHT THUMBS>;
+	hold-trigger-key-positions = <KEYS_RIGHT THUMBS_RIGHT>;
     };
     hm_r: homerow_mods_right {
         compatible = "zmk,behavior-hold-tap";
@@ -72,7 +72,7 @@
         tapping-term-ms = <200>;
         quick-tap-ms = <200>;
         bindings = <&kp>, <&kp>;
-	hold-trigger-key-positions = <KEYS_LEFT THUMBS>;
+	hold-trigger-key-positions = <KEYS_LEFT THUMBS_LEFT>;
     };
   };
 
