@@ -95,6 +95,7 @@ source: https://github.com/urob/zmk-nodefree-config/blob/8506dbaaee9b46d200aa553
         flavor = "balanced";
         tapping-term-ms = <200>;
         quick-tap-ms = <200>;
+	retro-tap;
         bindings = <&kp>, <&kp>;
     };
   };
