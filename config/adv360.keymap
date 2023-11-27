@@ -35,18 +35,17 @@ source: https://github.com/urob/zmk-nodefree-config/blob/8506dbaaee9b46d200aa553
 #define KEYS_LEFT 0 1 2 3 4 5 6 \
                   14 15 16 17 18 19 20 \
                   28 29 30 31 32 33 34 \
-                  42 43 44 45 46 47 \
-                  54 55 56 57 58
+                  46 47 48 49 50 51\
+                  60 61 62 63 64
 
 #define KEYS_RIGHT 7 8 9 10 11 12 13 \
                    21 22 23 24 25 26 27 \
-                   35 36 37 38 39 40 41 \
-		   48 49 50 51 52 53 \
-		   59 60 61 62 63
+                   39 40 41 42 43 44 45 \
+		   54 55 56 57 58 59 \
+		   71 72 73 74 75
 
-#define THUMBS_LEFT 64 65 68 69 70 74
-
-#define THUMBS_RIGHT 66 67 71 72 73 75
+#define THUMBS_LEFT  35 36 52 65 66 67
+#define THUMBS_RIGHT 37 38 53 68 69 70
 
 #define THUMBS THUMBS_LEFT THUMBS_RIGHT
 
@@ -105,7 +104,7 @@ source: https://github.com/urob/zmk-nodefree-config/blob/8506dbaaee9b46d200aa553
 
     // Thumb key mods
     #define _ESC_CTRL &hm_l LCTRL ESC
-    #define _SPACE_CTRL &hm_r RCTRL SPACE
+    //#define _SPACE_CTRL &hm_r RCTRL SPACE
 
 
 
@@ -118,8 +117,8 @@ source: https://github.com/urob/zmk-nodefree-config/blob/8506dbaaee9b46d200aa553
  &kp EQUAL  &kp N1         &kp N2      &kp N3       &kp N4       &kp N5         &tog 1                                                               &mo 3                   &kp N6  &kp N7       &kp N8          &kp N9      &kp N0            &kp MINUS
  &kp TAB    &kp Q          &kp W       &kp E        &kp R        &kp T          &macro_quotes                                                        &macro_vim_quit_all     &kp Y   &kp U        &kp I           &kp O       &kp P             &kp BSLH
  &kp ESC    _A_CMD         _S_OPT      &kp D        _F_SHFT      &kp G          &kp MACLOCK    &kp LGUI    &kp LCTRL           &kp RALT   &kp RGUI   &macro_vim_save_all     &kp H   _J_SHFT      &kp K           _L_OPT      _SEMI_SHFT        &kp SQT
- &kp LSHFT  _CMD_SHFT_Z    &kp X       &lt 2 C      &hm_l HYPER V  &kp B                                     &kp TAB             &kp TAB                                       &kp N   &hm_r HYPER M  &lt 2 COMMA     &kp DOT     _CMD_SHFT_FSLH    &kp RSHFT
- &mo 2      &kp GRAVE      &kp CAPS    &kp LEFT     &kp RIGHT                   _ESC_CTRL      &kp BSPC    &kp HYPER           &kp HYPER  &kp ENTER  _SPACE_CTRL                     &kp DOWN     &kp UP          &kp LBKT    &kp RBKT          &mo 2
+ &kp LSHFT  _CMD_SHFT_Z    &kp X       &lt 2 C      &hm_l HYPER V  &kp B                                   &kp TAB             &kp TAB                                       &kp N   &hm_r HYPER M  &lt 2 COMMA   &kp DOT     _CMD_SHFT_FSLH    &kp RSHFT
+ &mo 2      &kp GRAVE      &kp CAPS    &kp LEFT     &kp RIGHT                   _ESC_CTRL      &kp BSPC    &kp HYPER           &kp HYPER  &kp ENTER  &kp SPACE                       &kp DOWN     &kp UP          &kp LBKT    &kp RBKT          &mo 2
             >;
         };
 
