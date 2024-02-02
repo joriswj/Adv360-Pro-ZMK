@@ -16,6 +16,8 @@
 #define HYPER    LS(LC(LA(LGUI)))
 #define MACLOCK  LG(LC(Q))
 #define CMD_SHFT  LG(LSHFT)
+#define ALT_SHFT  LA(LSHFT)
+#define CTRL_UP  LC(UP)
 
 /*                                 ADVANTAGE 360 KEY MATRIX / LAYOUT MAPPING
  ╭────────────────────────────┬────────────────────────────╮ ╭────────────────────────────┬────────────────────────────╮
@@ -106,11 +108,13 @@ source: https://github.com/urob/zmk-nodefree-config/blob/8506dbaaee9b46d200aa553
     //#define _D_CTRL  &hm_l LCTRL D
     #define _F_SHFT  &hm_l LSHFT F
     #define _CMD_SHFT_Z  &hm_l CMD_SHFT Z
+    #define _ALT_SHFT_X  &hm_l ALT_SHFT X
     #define _J_SHFT  &hm_r RSHFT J
     //#define _K_CTRL  &hm_r RCTRL K
     #define _L_OPT   &hm_r RALT  L
     #define _SEMI_SHFT &hm_r RGUI SEMI
     #define _CMD_SHFT_FSLH  &hm_r CMD_SHFT FSLH
+    #define _ALT_SHFT_DOT  &hm_r ALT_SHFT DOT
 
     // Thumb key mods
     #define _ESC_CTRL &hm_c LCTRL ESC
@@ -124,11 +128,11 @@ source: https://github.com/urob/zmk-nodefree-config/blob/8506dbaaee9b46d200aa553
 
         default_layer {
             bindings = <
- &kp EQUAL  &kp N1         &kp N2      &kp N3       &kp N4       &kp N5         &tog 1                                                               &mo 3                   &kp N6  &kp N7       &kp N8          &kp N9      &kp N0            &kp MINUS
- &kp TAB    &kp Q          &kp W       &kp E        &kp R        &kp T          &macro_quotes                                                        &macro_vim_quit_all     &kp Y   &kp U        &kp I           &kp O       &kp P             &kp BSLH
- &kp ESC    _A_CMD         _S_OPT      &kp D        _F_SHFT      &kp G          &kp MACLOCK    &kp LGUI    &kp LALT            &kp RCTRL  &kp RGUI   &macro_vim_save_all     &kp H   _J_SHFT      &kp K           _L_OPT      _SEMI_SHFT        &kp SQT
- &kp LSHFT  _CMD_SHFT_Z    &kp X       &lt 2 C      &hm_l HYPER V  &kp B                                   &kp TAB             &kp TAB                                       &kp N   &hm_r HYPER M  &lt 2 COMMA   &kp DOT     _CMD_SHFT_FSLH    &kp RSHFT
- &mo 2      &kp GRAVE      &kp CAPS    &kp LEFT     &kp RIGHT                   _ESC_CTRL      &kp BSPC    &kp HYPER           &kp HYPER  &kp ENTER  &kp SPACE                       &kp DOWN     &kp UP          &kp LBKT    &kp RBKT          &mo 2
+ &kp EQUAL  &kp N1         &kp N2      &kp N3       &kp N4       &kp N5         &tog 1                                                               &mo 3                   &kp N6  &kp N7       &kp N8          &kp N9         &kp N0            &kp MINUS
+ &kp TAB    &kp Q          &kp W       &kp E        &kp R        &kp T          &macro_quotes                                                        &macro_vim_quit_all     &kp Y   &kp U        &kp I           &kp O          &kp P             &kp BSLH
+ &kp ESC    _A_CMD         _S_OPT      &kp D        _F_SHFT      &kp G          &kp MACLOCK    &kp LGUI    &kp LALT            &kp RCTRL  &kp RGUI   &macro_vim_save_all     &kp H   _J_SHFT      &kp K           _L_OPT         _SEMI_SHFT        &kp SQT
+ &kp LSHFT  _CMD_SHFT_Z    _ALT_SHFT_X &lt 2 C      &hm_l HYPER V  &kp B                                   &kp TAB             &kp TAB                                       &kp N   &hm_r HYPER M  &lt 2 COMMA   _ALT_SHFT_DOT  _CMD_SHFT_FSLH    &kp RSHFT
+ &mo 2      &kp GRAVE      &kp CAPS    &kp LEFT     &kp RIGHT                   _ESC_CTRL      &kp BSPC    &kp HYPER           &kp HYPER  &kp ENTER  &kp SPACE                       &kp DOWN     &kp UP          &kp LBKT       &kp RBKT          &kp CTRL_UP
             >;
         };
 
