@@ -110,7 +110,7 @@ source: https://github.com/urob/zmk-nodefree-config/blob/8506dbaaee9b46d200aa553
     #define _CMD_SHFT_Z  &hm_l CMD_SHFT Z
     #define _ALT_SHFT_X  &hm_l ALT_SHFT X
     #define _J_SHFT  &hm_r RSHFT J
-    //#define _K_CTRL  &hm_r RCTRL K
+    #define _K_CTRL  &hm_r RCTRL K
     #define _L_OPT   &hm_r RALT  L
     #define _SEMI_SHFT &hm_r RGUI SEMI
     #define _CMD_SHFT_FSLH  &hm_r CMD_SHFT FSLH
@@ -130,8 +130,8 @@ source: https://github.com/urob/zmk-nodefree-config/blob/8506dbaaee9b46d200aa553
             bindings = <
  &kp EQUAL   &kp N1         &kp N2      &kp N3       &kp N4         &kp N5       &tog 1                                                               &mo 3                   &kp N6     &kp N7         &kp N8          &kp N9         &kp N0            &kp MINUS
  &kp ESC     &kp Q          &kp W       &kp E        &kp R          &kp T        &macro_quotes                                                        &macro_vim_quit_all     &kp Y      &kp U          &kp I           &kp O          &kp P             &kp BSLH
- &kp TAB     _A_CMD         _S_OPT      &lt 1 D      _F_SHFT        &kp G        &kp MACLOCK    &kp LGUI    &kp LALT            &kp RCTRL  &kp RGUI   &macro_vim_save_all     &kp H      _J_SHFT        &lt 1 K         _L_OPT         _SEMI_SHFT        &kp SQT
- &kp LSHFT   _CMD_SHFT_Z    _ALT_SHFT_X &lt 2 C      &hm_l HYPER V  &kp B                                   &kp TAB             &kp TAB                                       &kp N      &hm_r HYPER M  &lt 2 COMMA     _ALT_SHFT_DOT  _CMD_SHFT_FSLH    &kp RSHFT
+ &kp TAB     _A_CMD         _S_OPT      &lt 2 D      _F_SHFT        &kp G        &kp MACLOCK    &kp LGUI    &kp LALT            &kp RCTRL  &kp RGUI   &macro_vim_save_all     &kp H      _J_SHFT        _K_CTRL         _L_OPT         _SEMI_SHFT        &kp SQT
+ &kp LSHFT   _CMD_SHFT_Z    _ALT_SHFT_X &lt 1 C      &hm_l HYPER V  &kp B                                   &kp TAB             &kp TAB                                       &kp N      &hm_r HYPER M  &lt 1 COMMA     _ALT_SHFT_DOT  _CMD_SHFT_FSLH    &kp RSHFT
  &kp CTRL_UP &kp GRAVE      &kp CAPS    &kp LEFT     &kp RIGHT                   _ESC_CTRL      &kp BSPC    &kp HYPER           &kp HYPER  &kp ENTER  &kp SPACE                          &kp DOWN       &kp UP          &kp LBKT       &kp RBKT          &kp CTRL_UP
             >;
         };
