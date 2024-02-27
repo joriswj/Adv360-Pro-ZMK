@@ -128,21 +128,21 @@ source: https://github.com/urob/zmk-nodefree-config/blob/8506dbaaee9b46d200aa553
 
         default_layer {
             bindings = <
- &kp EQUAL  &kp N1         &kp N2      &kp N3       &kp N4         &kp N5       &tog 1                                                               &mo 3                   &kp N6     &kp N7         &kp N8          &kp N9         &kp N0            &kp MINUS
- &kp ESC    &kp Q          &kp W       &kp E        &kp R          &kp T        &macro_quotes                                                        &macro_vim_quit_all     &kp Y      &kp U          &kp I           &kp O          &kp P             &kp BSLH
- &kp TAB    _A_CMD         _S_OPT      &lt 1 D      _F_SHFT        &kp G        &kp MACLOCK    &kp LGUI    &kp LALT            &kp RCTRL  &kp RGUI   &macro_vim_save_all     &kp H      _J_SHFT        &lt 1 K         _L_OPT         _SEMI_SHFT        &kp SQT
- &kp LSHFT  _CMD_SHFT_Z    _ALT_SHFT_X &lt 2 C      &hm_l HYPER V  &kp B                                   &kp TAB             &kp TAB                                       &kp N      &hm_r HYPER M  &lt 2 COMMA     _ALT_SHFT_DOT  _CMD_SHFT_FSLH    &kp RSHFT
- &mo 2      &kp GRAVE      &kp CAPS    &kp LEFT     &kp RIGHT                   _ESC_CTRL      &kp BSPC    &kp HYPER           &kp HYPER  &kp ENTER  &kp SPACE                          &kp DOWN       &kp UP          &kp LBKT       &kp RBKT          &kp CTRL_UP
+ &kp EQUAL   &kp N1         &kp N2      &kp N3       &kp N4         &kp N5       &tog 1                                                               &mo 3                   &kp N6     &kp N7         &kp N8          &kp N9         &kp N0            &kp MINUS
+ &kp ESC     &kp Q          &kp W       &kp E        &kp R          &kp T        &macro_quotes                                                        &macro_vim_quit_all     &kp Y      &kp U          &kp I           &kp O          &kp P             &kp BSLH
+ &kp TAB     _A_CMD         _S_OPT      &lt 1 D      _F_SHFT        &kp G        &kp MACLOCK    &kp LGUI    &kp LALT            &kp RCTRL  &kp RGUI   &macro_vim_save_all     &kp H      _J_SHFT        &lt 1 K         _L_OPT         _SEMI_SHFT        &kp SQT
+ &kp LSHFT   _CMD_SHFT_Z    _ALT_SHFT_X &lt 2 C      &hm_l HYPER V  &kp B                                   &kp TAB             &kp TAB                                       &kp N      &hm_r HYPER M  &lt 2 COMMA     _ALT_SHFT_DOT  _CMD_SHFT_FSLH    &kp RSHFT
+ &kp CTRL_UP &kp GRAVE      &kp CAPS    &kp LEFT     &kp RIGHT                   _ESC_CTRL      &kp BSPC    &kp HYPER           &kp HYPER  &kp ENTER  &kp SPACE                          &kp DOWN       &kp UP          &kp LBKT       &kp RBKT          &kp CTRL_UP
             >;
         };
 
         layer_symbols {
             bindings = <
- &kp F11    &kp F1         &kp F2      &kp F3       &kp F4         &kp F5       &tog 1                                                                &mo 3                  &kp F6     &kp F7         &kp F8          &kp F9         &kp F10           &kp F12
- &trans     &kp EXCL       &kp AT      &kp HASH     &kp DLLR       &kp PRCNT    &none                                                                 &none                  &kp CARET  &kp AMPS       &kp KP_MULTIPLY &kp LPAR       &kp RPAR          &kp BSLH
- &trans     &kp N1         &kp N2      &kp N3       &kp N4         &kp N5       &none          &trans      &trans              &trans     &trans      &none                  &kp MINUS  &kp EQUAL      &kp GRAVE       &kp LBKT       &kp RBKT          &kp PIPE
- &trans     &kp N6         &kp N7      &kp N8       &kp N9         &kp N0                                  &trans              &trans                                        &kp UNDER  &kp PLUS       &kp TILDE       &kp LBRC       &kp RBRC          &kp RSHFT
- &trans     &trans         &trans      &trans       &trans                      &trans         &trans      &trans              &trans     &trans      &trans                            &trans         &trans          &trans         &trans            &trans
+ &kp F11     &kp F1         &kp F2      &kp F3       &kp F4         &kp F5       &tog 1                                                                &mo 3                  &kp F6     &kp F7         &kp F8          &kp F9         &kp F10           &kp F12
+ &trans      &kp EXCL       &kp AT      &kp HASH     &kp DLLR       &kp PRCNT    &none                                                                 &none                  &kp CARET  &kp AMPS       &kp KP_MULTIPLY &kp LPAR       &kp RPAR          &kp BSLH
+ &trans      &kp N1         &kp N2      &kp N3       &kp N4         &kp N5       &none          &trans      &trans              &trans     &trans      &none                  &kp MINUS  &kp EQUAL      &kp GRAVE       &kp LBKT       &kp RBKT          &kp PIPE
+ &trans      &kp N6         &kp N7      &kp N8       &kp N9         &kp N0                                  &trans              &trans                                        &kp UNDER  &kp PLUS       &kp TILDE       &kp LBRC       &kp RBRC          &kp RSHFT
+ &trans      &trans         &trans      &trans       &trans                      &trans         &trans      &trans              &trans     &trans      &trans                            &trans         &trans          &trans         &trans            &trans
             >;
         };
 
